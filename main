@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Product Comparison – Single‑file site (GitHub Pages ready) -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pixel 10 Pro XL vs Galaxy S25 Ultra — Executive One‑Pager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#0b0d10; --card:#11151a; --ink:#eaf2fb; --muted:#8aa0b5; --line:rgba(255,255,255,.08); --accent:#53b1fd; --ok:#2ecc71; --warn:#ffb84d; --no:#ff6b6b; --radius:16px; }
+    [data-theme="light"]{ --bg:#f6f8fb; --card:#ffffff; --ink:#0b0d10; --muted:#5a6b7a; --line:#e6edf5; --accent:#0d7ef2; --ok:#2da160; --warn:#c78300; --no:#d64a4a; }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    .wrap{max-width:1100px;margin:0 auto;padding:20px}
+    header{position:sticky;top:0;z-index:10;background:linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,0));backdrop-filter:blur(8px)}
+    .topbar{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)}
+    .brand{display:flex;align-items:center;gap:10px}
+    .logo{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:var(--accent);color:white;font:700 16px Manrope}
+    h1{font:700 28px/1.2 Manrope,Inter,sans-serif;margin:8px 0}
+    .lead{color:var(--muted);max-width:900px}
+    .btn{appearance:none;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:12px;padding:10px 14px;font-weight:600;cursor:pointer}
+    .btn.primary{background:var(--accent);border-color:transparent;color:white}
+    .buttons{display:flex;gap:8px;flex-wrap:wrap}
+    .grid{display:grid;gap:16px}
+    @media(min-width:900px){.cols-2{grid-template-columns:1fr 1fr}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+    .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+    .kpi{background:transparent;border:1px dashed var(--line);border-radius:12px;padding:12px;text-align:center}
+    .kpi .lbl{font-size:12px;color:var(--muted)}
+    .kpi .val{font:700 20px/1 Manrope}
+    .product{display:flex;align-items:center;gap:12px}
+    .product img{width:48px;height:48px;border-radius:12px;border:1px solid var(--line);object-fit:cover}
+    .product h3{margin:0;font:700 18px/1.2 Manrope}
+    .tag{font-size:12px;color:var(--muted)}
+    .table{display:grid;gap:10px;margin-top:6px}
+    .row{display:grid;grid-template-columns:220px 1fr 1fr;gap:10px;align-items:stretch}
+    .cell{background:transparent;border:1px solid var(--line);border-radius:12px;padding:12px}
+    .cell.good{outline:2px solid rgba(83,177,253,.35)}
+    .muted{color:var(--muted)}
+    .section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:4px 0 10px}
+    .badge{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:4px 10px;border:1px solid var(--line);font-size:12px;color:var(--muted)}
+    .list{display:flex;flex-direction:column;gap:8px;padding-left:18px}
+    .list li{margin:0}
+    .pro::marker{color:var(--ok)}
+    .con::marker{color:var(--no)}
+    footer{color:var(--muted);padding:30px 0;text-align:center}
+    @media print{header{position:static;background:transparent} .btn{display:none} .card{break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">PC</div>
+        <div>
+          <div style="font:700 14px Manrope">Product Comparison</div>
+          <div style="font-size:12px" class="muted">One‑Pager (not slides)</div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn" id="themeBtn" aria-label="Toggle theme">Toggle Theme</button>
+        <button class="btn" onclick="document.getElementById('specs').scrollIntoView({behavior:'smooth'})">Jump to Specs</button>
+        <button class="btn primary" onclick="window.print()">Export to PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1 id="title">Pixel 10 Pro XL vs Galaxy S25 Ultra — Executive One‑Pager</h1>
+    <p class="lead">Pre‑filled comparison tailored for a frequent‑traveler, call‑heavy user who needs reliable email/docs, quick photo export, excellent battery/charging, and helpful AI features.</p>
+
+    <section class="grid cols-2" aria-label="Summary">
+      <div class="card">
+        <div class="grid cols-2" style="gap:12px">
+          <div class="product">
+            <img alt="Pixel 10 Pro XL" src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=300&auto=format&fit=crop" />
+            <div>
+              <h3>Pixel 10 Pro XL</h3>
+              <div class="tag">AI‑first, clean Android</div>
+            </div>
+          </div>
+          <div class="product">
+            <img alt="Galaxy S25 Ultra" src="https://images.unsplash.com/photo-1678685888221-cda773a3b7e7?q=80&w=300&auto=format&fit=crop" />
+            <div>
+              <h3>Galaxy S25 Ultra</h3>
+              <div class="tag">S Pen, battery brute</div>
+            </div>
+          </div>
+        </div>
+        <div class="kpis" style="margin-top:12px">
+          <div class="kpi"><div class="lbl">Battery endurance</div><div class="val">Pixel: strong · Galaxy: stronger</div></div>
+          <div class="kpi"><div class="lbl">Charge to ~50%</div><div class="val">Pixel: quick · Galaxy: very quick</div></div>
+          <div class="kpi"><div class="lbl">Call quality</div><div class="val">Both excellent w/ noise reduce</div></div>
+          <div class="kpi"><div class="lbl">AI assist</div><div class="val">Pixel: voice‑first · Galaxy: suite</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="section-head">
+          <h2 style="margin:0;font:700 18px Manrope">Who should pick which?</h2>
+          <span class="badge">Fast guidance</span>
+        </div>
+        <ul class="list">
+          <li class="pro"><strong>Choose Pixel</strong> if you want the cleanest Android, superb dictation/transcription, and simple day‑to‑day UX.</li>
+          <li class="pro"><strong>Choose Galaxy</strong> if you want longer battery life, faster charging, deeper customization, and S Pen precision for travel notes and docs.</li>
+          <li class="con"><strong>Consider smaller models</strong> if hand comfort is critical—both are big and a bit heavy.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="specs" class="card" style="margin-top:16px" aria-labelledby="compare">
+      <div class="section-head">
+        <h2 id="compare" style="margin:0">Side‑by‑Side Features</h2>
+        <span class="badge">Highlighted = better pick</span>
+      </div>
+      <div class="table">
+        <div class="row">
+          <div class="cell"><strong>Battery life</strong><div class="muted">All‑day heavy use</div></div>
+          <div class="cell">Very good; gets through a long day</div>
+          <div class="cell good">Excellent; more cushion for travel days</div>
+        </div>
+        <div class="row">
+          <div class="cell"><strong>Charging</strong><div class="muted">Wired / Wireless</div></div>
+          <div class="cell">Fast USB‑PPS</div>
+          <div class="cell good">Faster wired; strong wireless</div>
+        </div>
+        <div class="row">
+          <div class="cell"><strong>Cameras</strong><div class="muted">Everyday shots / Zoom</div></div>
+          <div class="cell good">Natural color and point‑and‑shoot consistency</div>
+          <div class="cell">Sharper long‑zoom and more pro controls</div>
+        </div>
+        <div class="row">
+          <div class="cell"><strong>Notes & docs</strong><div class="muted">Sign, annotate, mark up</div></div>
+          <div class="cell">Great voice notes & transcription</div>
+          <div class="cell good">S Pen for signatures, diagrams, quick edits</div>
+        </div>
+        <div class="row">
+          <div class="cell"><strong>AI features</strong><div class="muted">Voice, summarize, image tools</div></div>
+          <div class="cell good">Best voice‑agent experience</div>
+          <div class="cell">Broad on‑device creative/assist tools</div>
+        </div>
+        <div class="row">
+          <div class="cell"><strong>Ecosystem</strong><div class="muted">Accessories & pairing</div></div>
+          <div class="cell">Google‑first; pairs fine with most buds</div>
+          <div class="cell good">Tight with Galaxy Buds/Watch/Tab</div>
+        </div>
+        <div class="row">
+          <div class="cell"><strong>Call handling</strong><div class="muted">Noise reduction, clarity</div></div>
+          <div class="cell">Strong clarity; excellent captions</div>
+          <div class="cell good">Strong clarity; robust noise controls</div>
+        </div>
+        <div class="row">
+          <div class="cell"><strong>One‑hand use</strong><div class="muted">Size & weight</div></div>
+          <div class="cell">Large; case recommended</div>
+          <div class="cell">Large and a bit heavier</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid cols-2" style="margin-top:16px" aria-label="Pros & Cons">
+      <div class="card">
+        <div class="section-head">
+          <h2 style="margin:0">Pros & Cons — Pixel</h2>
+          <span class="badge">TL;DR</span>
+        </div>
+        <ul class="list">
+          <li class="pro">Clean UI, fast updates</li>
+          <li class="pro">Excellent voice assistant & transcription</li>
+          <li class="pro">Natural color science</li>
+          <li class="con">Battery varies with heavy camera use</li>
+          <li class="con">Fewer advanced toggles in camera app</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="section-head">
+          <h2 style="margin:0">Pros & Cons — Galaxy</h2>
+          <span class="badge">TL;DR</span>
+        </div>
+        <ul class="list">
+          <li class="pro">Longer battery endurance</li>
+          <li class="pro">S Pen precision & quick notes</li>
+          <li class="pro">Deeper customization & power‑user tools</li>
+          <li class="con">Heavier; One UI learning curve</li>
+          <li class="con">More preinstalled apps</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid cols-2" style="margin-top:16px" aria-label="Pricing & Verdict">
+      <div class="card">
+        <div class="section-head">
+          <h2 style="margin:0">Pricing (MSRP)</h2>
+          <span class="badge">Edit as needed</span>
+        </div>
+        <div class="table" style="grid-template-columns:1fr 140px">
+          <div class="row" style="grid-template-columns:1fr 140px">
+            <div class="cell">Pixel 10 Pro XL</div>
+            <div class="cell">$999 (typical)</div>
+          </div>
+          <div class="row" style="grid-template-columns:1fr 140px">
+            <div class="cell">Galaxy S25 Ultra</div>
+            <div class="cell">$1199 (typical)</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="section-head">
+          <h2 style="margin:0">Verdict — for your use case</h2>
+          <span class="badge">Frequent traveler & call‑heavy</span>
+        </div>
+        <p><strong>Recommendation:</strong> <em>Galaxy S25 Ultra</em> for the battery cushion on travel days, faster top‑ups, and S Pen for quick signatures/markup. If you value the simplest interface and top‑tier voice‑assistant performance, the <em>Pixel 10 Pro XL</em> is the easier daily driver.</p>
+        <p class="muted">Tip: If earbuds often fall out, try foam tips or ear‑hook styles; Galaxy Buds with stabilizers pair nicely, and Pixel works well with third‑party options.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made with a single HTML file. Host on GitHub Pages. © <span id="year"></span></p>
+    </footer>
+  </main>
+
+  <script>
+    const root = document.documentElement;
+    const themeBtn = document.getElementById('themeBtn');
+    const saved = localStorage.getItem('pc_theme');
+    if(saved){ root.setAttribute('data-theme', saved); }
+    themeBtn.addEventListener('click', () => {
+      const next = root.getAttribute('data-theme') === 'light' ? '' : 'light';
+      if(next){ root.setAttribute('data-theme', next); localStorage.setItem('pc_theme', next); }
+      else { root.removeAttribute('data-theme'); localStorage.removeItem('pc_theme'); }
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
